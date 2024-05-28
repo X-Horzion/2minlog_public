@@ -1,5 +1,6 @@
 #############################################################################################
 ### A simple bolilerplate code for 2minlog service.
+### https://raw.githubusercontent.com/X-Horzion/2minlog_public/main/examples/00_hello_world.py
 ###
 ### - Works if deployed in 2minlog environment, and also in your local environment.
 ### - You need to install the libraries: pip3 install pandas matplotlib
