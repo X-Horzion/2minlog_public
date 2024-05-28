@@ -3,7 +3,7 @@
 ### https://raw.githubusercontent.com/X-Horzion/2minlog_public/main/examples/00_hello_world.py
 ###
 ### - Works if deployed in 2minlog environment, and also in your local environment.
-### - You need to install the libraries: pip3 install pandas matplotlib
+### - You need to install the libraries if you want to run it locally on your computer: pip3 install pandas matplotlib
 ### - It shows a dummy graph if called with no parameters
 ### - Else it plots the dataset
 ###
