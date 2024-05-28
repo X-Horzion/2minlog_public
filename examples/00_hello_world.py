@@ -1,3 +1,12 @@
+#############################################################################################
+### A simple bolilerplate code for 2minlog service.
+###
+### - Works if deployed in 2minlog environment, and also in your local environment.
+### - You need to install the libraries: pip3 install pandas matplotlib
+### - It shows a dummy graph if called with no parameters
+### - Else it plots the dataset
+###
+
 import pandas as pd
 import base64
 import matplotlib.pyplot as plt
@@ -30,7 +39,7 @@ def returnimg(ff):
 def handler(dfs):
     if len(dfs) > 0:
         df = dfs[0]
-    else: # If dfs = [] let's set some dummy graph   
+    else: # If dfs = [] let's set some dummy graph
         df = pd.DataFrame({'timestamp': [0,1], 'value': [1,2]}).set_index('timestamp')
 
     ff = plotimg(df)
@@ -42,7 +51,7 @@ def handler(dfs):
 
 #################################################################
 ### Code to run locally, mimicking the cloud environment
-DATASET_NAMES = ['qq']
+DATASET_NAMES = ['example_dataset'] # .csv
 OUTPUT_TYPE = 'jpg'
 
 if 'TWO_MINLOG_EXECUTION_ENV' not in globals():
